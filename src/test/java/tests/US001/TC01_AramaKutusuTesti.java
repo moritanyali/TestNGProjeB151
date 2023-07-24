@@ -13,5 +13,6 @@ public class TC01_AramaKutusuTesti {
         Page page = new Page();
         //blabla
         Driver.closeDriver();
+        //Amazon sayfasına gidilip arama kutusu test edildi
     }
 }
