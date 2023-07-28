@@ -724,8 +724,6 @@ public class Page {
     public WebElement username;
     @FindBy(xpath = "(//*[@class='w-icon-account'])[1]")
     public WebElement profileButton;
-    @FindBy(xpath = "(//*[@class='w-icon-account'])[1]")
-    public WebElement myAccountButton;
     @FindBy(xpath = "//*[*='Store Manager']")
     public WebElement storeManager;
     @FindBy(xpath = "(//*[contains(text(), 'Products')])[1]")
@@ -746,8 +744,6 @@ public class Page {
     public WebElement advanced;
     @FindBy(xpath = "//*[@id='sku']")
     public WebElement skuInput;
-    @FindBy(xpath = "//*[@id='stock_status']")
-    public WebElement stockStatus;
     @FindBy(xpath = "//*[@id='manage_stock']")
     public WebElement manageSkuCheckbox;
     @FindBy(xpath = "//*[@id='stock_qty']")
@@ -804,12 +800,6 @@ public class Page {
     public WebElement schedule;
     @FindBy(xpath = "//*[@id='sale_date_from']")
     public WebElement dateFrom;
-    @FindBy(xpath = "//*[@id='sale_date_upto']")
-    public WebElement dateUpto;
-    @FindBy(xpath = "(//*[@class='button insert-media add_media'])[2]")
-    public WebElement shortDescriptionAddMedia;
-    @FindBy(xpath = "//*[@id='__wp-uploader-id-1']")
-    public WebElement shortDescriptionSelectFile;
     @FindBy(xpath = "//*[@id='menu-item-browse']")
     public WebElement mediaLibrary;
     @FindBy(xpath = "(//div[@class='thumbnail'])[1]")
@@ -824,24 +814,12 @@ public class Page {
     public WebElement descriptionInput;
     @FindBy(xpath = "//*[@id='featured_img_display']")
     public WebElement addBigPicture;
-    @FindBy(xpath = "//*[@id='//*[@id='__wp-uploader-id-1']']")
-    public WebElement bigPictureSelectFile;
     @FindBy(xpath = "(//*[*='Select'])[4]")
     public WebElement bigPictureSelectFileButton;
-    @FindBy(xpath = "(//*[@id='menu-item-upload'])[3]")
-    public WebElement bigPictureUploadSection;
     @FindBy(xpath = "(//*[@data-id='22264'])[3]")
     public WebElement bigPicture;
-    @FindBy(xpath = "//*[@class='button media-button button-primary button-large media-button-select']")
-    public WebElement bigPictureUploadSelectedPicture;
     @FindBy(xpath = "//*[@id='gallery_img_gimage_0_display']")
     public WebElement addSmallPicture;
-    @FindBy(xpath = "(//*[@id='menu-item-upload'])[2]")
-    public WebElement smallPictureUploadSection;
-    @FindBy(xpath = "(//*[@data-id='22264'])[9]")
-    public WebElement smallPicture;
-    @FindBy(xpath = "//*[@id='__wp-uploader-id-4']")
-    public WebElement smallPictureSelectFile;
     @FindBy(xpath = "(//*[text()='Add to Gallery'])[3]")
     public WebElement smallPictureAddToGalleryButton;
     @FindBy(xpath = "//*[@data-super_parent='608']")
@@ -865,11 +843,8 @@ public class Page {
     public WebElement downloadableUpload;
     @FindBy(xpath = "(//*[*='Select'])[8]")
     public WebElement downloadableSelect;
-    @FindBy(xpath = "//*[*='Product Successfully Published.']")
-    public WebElement successMessage;
     @FindBy(xpath = "//*[*='Published']")
     public WebElement publishedMessage;
-
     //Oguzhan Aydin bitis
 
 
