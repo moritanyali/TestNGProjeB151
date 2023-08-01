@@ -1,16 +1,41 @@
 package pages;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
-
 public class Page {
-    public Page() {
-        PageFactory.initElements(Driver.getDriver(), this);
-    }
 
+    public Page(){ PageFactory.initElements(Driver.getDriver() , this);}
 
+    //Fatih-US-01-02
+    @FindBy(xpath = "//*[@class='logo']")
+    public WebElement anaSayfa;
+    @FindBy(xpath = "//*[@class='register inline-type']")
+    public WebElement registerButton;
+   // @FindBy(xpath = "(//*[@id='reg_username'])[1]")
+   // public WebElement username;
+    @FindBy(xpath = "(//*[@id='reg_email'])[1]")
+    public WebElement emailClick;
+    @FindBy(xpath = "//*[@id='reg_password']")
+    public WebElement passwordClick;
+    @FindBy(xpath = "//*[@id='register-policy']")
+    public WebElement IAgreeButton;
+    @FindBy(xpath = "(//*[@type='submit'])[2]")
+    public WebElement signUp;
+    @FindBy(xpath = "(//*[@class='w-icon-account'])[1]")
+    public WebElement signOutButton;
+    @FindBy(xpath = "(//*[@class='submit-status'])[2]")
+    public WebElement kayitliHesap;
+    @FindBy(xpath = "//*[@class='color cetc']")
+    public WebElement fakeMailCopy;
+    @FindBy(xpath = "(//*[@aria-live='polite'])[1]")
+    public WebElement passwordVerify;
+    @FindBy(xpath = "//*[@class='icon-box-icon icon-logout']")
+    public WebElement cikisYap;
+    @FindBy(xpath = "//*[@value='Sign Up']")
+    public WebElement signUpButton;
+    @FindBy(xpath = "(//h2)")
+    public WebElement MyAccount;
 
 
 
@@ -72,6 +97,7 @@ public class Page {
 
 
 
+//Hanife
 
 
 
@@ -171,6 +197,7 @@ public class Page {
 
 
 
+    //Kubra-US-05-06
 
 
 
@@ -270,6 +297,7 @@ public class Page {
 
 
 
+//Furkan
 
 
 
@@ -369,7 +397,53 @@ public class Page {
 
 
 
+    //Rana
+    @FindBy(xpath = "//a[@class='register inline-type']")
+    public WebElement registion;
+    // @FindBy(xpath = "//span[.='Sign In']")
+    // public WebElement signIn;
+    //@FindBy(xpath = "//a[.='Sign Up']")
+    //public WebElement signUp;
+    @FindBy(xpath = "(//a[@href='https://allovercommerce.com/vendor-register/'])[2]")
+    public WebElement BecomeVendor;
+    @FindBy(xpath = "(//h2)[1]")
+    public WebElement VendorRegistrationYazisi;
+    @FindBy(xpath = "(//a[@title='Copy this email address'])[2]")
+    public WebElement fakeEmailCopy;
+    @FindBy(xpath = "//tr[@class='hidden-xs hidden-sm klikaciRadek newMail']")
+    public WebElement fakeEmailCode;
+    @FindBy(xpath = "(//input)[3]")
+    public WebElement email;
+    @FindBy(xpath = "//div[@class='wcfm-message email_verification_message wcfm-success']")
+    public WebElement verification;
+    @FindBy(xpath = "//input[@name='wcfm_email_verified_input']")
+    public WebElement veryficationCodeKutusu;
+    @FindBy(xpath = "//strong[text()='Email']")
+    public WebElement bosluk;
+    @FindBy(xpath = "(//input)[5]")
+    public WebElement resendCode;
+    @FindBy(xpath = "(//input[@type='password'])[1]")
+    public WebElement password;
+    @FindBy(xpath = "(//input)[7]")
+    public WebElement confirmPassword;
+    @FindBy(xpath = "//input[@value='Register']")
+    public WebElement submit;
+    @FindBy(id = "password_strength")
+    public WebElement verifyPassword;
+    @FindBy(xpath = "//div[@class='wcfm-message email_verification_message wcfm-error']")
+    public WebElement erroremail;
+    @FindBy(xpath = "//*[.='Registration Successfully Completed.']")
+    public WebElement successlogin;
+    @FindBy(xpath = "//div[@class='wcfm-message wcfm-error']")//confirm password altı
+    public WebElement messageError;
+    @FindBy(xpath = "(//h1)[2]")
+    public WebElement welcome;
+    @FindBy(xpath = "//b")
+    public WebElement code;
+    @FindBy(css = ".login-popup")
+    public WebElement become;
 
+    //Rana-US-09-10
 
 
 
@@ -423,6 +497,7 @@ public class Page {
 
 
 
+    //Ali-US-11-12
 
 
 
@@ -521,183 +596,47 @@ public class Page {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //İlyas
+    @FindBy(xpath = "//*[@class='login inline-type']")
+    public WebElement singInButonu;
+    @FindBy(xpath = "//*[@id='reg_username']")
+    public WebElement usernameRegister;
+    @FindBy(xpath = "//*[@id='reg_email']")
+    public WebElement mail;
+    @FindBy(xpath = "//*[@id='reg_password']")
+    public WebElement passwordRegister;
+    @FindBy(xpath = "//*[@id='register-policy']")
+    public WebElement agree;
+    @FindBy(xpath = "//*[@name='register']")
+    public WebElement register;
+    @FindBy(xpath = "//*[text()='Sign Out']")
+    public WebElement singOut;
+    @FindBy(xpath = "(//a[@href='https://allovercommerce.com/my-account-2/edit-address/'])[1]")
+    public WebElement adresses;
+    @FindBy(xpath = "//*[@href='https://allovercommerce.com/my-account-2/edit-address/shipping/']")
+    public WebElement shippingAdd;
+    @FindBy(xpath = "//*[@id='shipping_first_name']")
+    public WebElement shippingName;
+    @FindBy(xpath = "//*[@id='shipping_last_name']")
+    public WebElement shippingLastName;
+    @FindBy(xpath = "//*[@name='shipping_address_1']")
+    public WebElement street;
+    @FindBy(xpath = "//*[@id='shipping_postcode']")
+    public WebElement zipCode;
+    @FindBy(xpath = "//*[@id='select2-shipping_state-container']")
+    public WebElement province;
+    @FindBy(xpath = "//*[@name='save_address']")
+    public WebElement save;
+    @FindBy(xpath = "//*[@class='woocommerce-message alert alert-simple alert-icon alert-close-top alert-success']")
+    public WebElement succefully;
+    @FindBy(xpath = "//*[@id='shipping_city']")
+    public WebElement city;
+    @FindBy(xpath = "//*[@id='shipping_state']")
+    public WebElement state;
+    @FindBy(xpath = "//*[@id='shipping_state']")
+    public WebElement country;
+    @FindBy(xpath = "//*[@id='shipping_country']")
+    public WebElement region;
 
 
 
@@ -720,8 +659,8 @@ public class Page {
     //Oguzhan Aydin
     @FindBy(xpath = "//*[text()='Sign In']")
     public WebElement signIn;
-    @FindBy(xpath = "//*[@id='username']")
-    public WebElement username;
+     @FindBy(xpath = "//*[@id='username']")
+     public WebElement username;
     @FindBy(xpath = "(//*[@class='w-icon-account'])[1]")
     public WebElement profileButton;
     @FindBy(xpath = "//*[*='Store Manager']")
@@ -834,7 +773,6 @@ public class Page {
     public WebElement submitProductButton;
     @FindBy(xpath = "//*[@class='wcicon-status-cancelled']")
     public WebElement failMessage;
-
     @FindBy(xpath = "//*[@class='wcfmfa fa-cloud-download-alt']")
     public WebElement downloadable;
     @FindBy(xpath = "//*[@id='downloadable_files_name_0']")
@@ -845,9 +783,328 @@ public class Page {
     public WebElement downloadableSelect;
     @FindBy(xpath = "//*[*='Published']")
     public WebElement publishedMessage;
+    @FindBy(xpath = "//*[@id='__wp-uploader-id-7']")
+    public WebElement addPicFromPc;
+    @FindBy(xpath = "(//*[@id='menu-item-upload'])[3]")
+    public WebElement uploadPic;
+    @FindBy(xpath = "//*[@id='__wp-uploader-id-10']")
+    public WebElement smallPicUpload;
+    @FindBy(xpath = "(//*[@id='menu-item-upload'])[4]")
+    public WebElement smallPicSelectFile;
+    @FindBy(xpath = "//*[@id='__wp-uploader-id-1']")
+    public WebElement descriptionSelectPic;
     //Oguzhan Aydin bitis
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Sırma
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Mesut
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //Mesut-US-19-20
 }

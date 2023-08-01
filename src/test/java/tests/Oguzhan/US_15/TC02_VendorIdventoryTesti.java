@@ -46,6 +46,8 @@ public class TC02_VendorIdventoryTesti extends ExtentReport {
 //        Inventory menüsünün görülebilir olduğunu doğrula
         Assert.assertTrue(page.idventory.isDisplayed());
         extentTest.pass("Idventory menüsünün görünürlüğü doğrulandı");
+        ReusableMethods.bekle(2);
+        ReusableMethods.webElementResmi(page.idventory);
 
 //        SKU alanına girdi gir
         page.skuInput.sendKeys("JNS");
@@ -58,6 +60,8 @@ public class TC02_VendorIdventoryTesti extends ExtentReport {
 //        "Manage Stock?" kutucuğu işaretlenince "Stock Qty" alanının görünür olduğunu doğrula
         Assert.assertTrue(page.stockQty.isDisplayed());
         extentTest.pass("Stock Qty görünür hale geldiği doğrulandı");
+        ReusableMethods.bekle(2);
+        ReusableMethods.webElementResmi(page.stockQty);
 
 //        "Stock Qty" alanına değer gir.
         page.stockQty.sendKeys("12");
